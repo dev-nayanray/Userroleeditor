@@ -1,0 +1,83 @@
+.addrole {
+   
+}
+
+.horizontal-form .form-group {
+    margin-bottom: 15px;
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items vertically */
+}
+
+.horizontal-form .form-group label {
+    width: 150px; /* Adjust label width as needed */
+    text-align: right;
+    margin-right: 10px;
+}
+
+.horizontal-form .form-group input[type="text"],
+.horizontal-form .form-group textarea {
+    flex: 1; /* Take remaining space */
+}
+.form-group {
+    width: calc(30% - 10px); /* Adjust width to fit two items per row with some margin */
+    float: left; /* Float the elements to achieve grid layout */
+    margin-right: 10px; /* Add margin between form groups */
+    margin-bottom: 10px; /* Add margin at the bottom of each row */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear the float after every two form groups */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.capabilities-list-containers {
+    max-height: 100px; /* Set maximum height for capabilities list */
+    overflow-y: auto; /* Enable vertical scrollbar if needed */
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.capabilitys {
+    margin-bottom: 5px;
+}
+
+.capabilitys input[type="checkbox"] {
+    margin-right: 5px; /* Add some space between checkbox and label */
+}
+
+button[type="submit"] {
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.capabilities-list-container {
+    max-height: 150px; /* Set maximum height for capabilities list */
+    overflow-y: auto; /* Enable vertical scrollbar if needed */
+    border: 1px solid #ccc; /* Add border for better visibility */
+    padding: 5px;
+}
+
+.capability {
+    margin-bottom: 5px; /* Add space between capability items */
+}
+
+/* Hide scrollbar for capabilities list container */
+.capabilities-list-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for webkit browsers (Chrome, Safari, etc.) */
+}
